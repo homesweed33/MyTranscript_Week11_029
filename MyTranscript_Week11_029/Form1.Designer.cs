@@ -29,8 +29,8 @@ namespace MyTranscript_Week11_029
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUniversityName = new System.Windows.Forms.Label();
+            this.labelFacultyName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,39 +41,49 @@ namespace MyTranscript_Week11_029
             this.textBoxCourseCredit = new System.Windows.Forms.TextBox();
             this.textBoxGrade = new System.Windows.Forms.TextBox();
             this.buttonAddCourse = new System.Windows.Forms.Button();
-            this.dataGridViewCourse = new System.Windows.Forms.DataGridView();
+            this.dataGridViewY1S1 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageYear1Sem1 = new System.Windows.Forms.TabPage();
+            this.tabPageYear1Sem2 = new System.Windows.Forms.TabPage();
+            this.dataGridViewY1S2 = new System.Windows.Forms.DataGridView();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCourse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewY1S1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPageYear1Sem1.SuspendLayout();
+            this.tabPageYear1Sem2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewY1S2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelUniversityName
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelUniversityName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label1.Location = new System.Drawing.Point(250, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "My university name";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUniversityName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.labelUniversityName.Location = new System.Drawing.Point(250, 19);
+            this.labelUniversityName.Name = "labelUniversityName";
+            this.labelUniversityName.Size = new System.Drawing.Size(289, 37);
+            this.labelUniversityName.TabIndex = 0;
+            this.labelUniversityName.Text = "My university name";
+            this.labelUniversityName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelFacultyName
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelFacultyName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label2.Location = new System.Drawing.Point(250, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(289, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "My faculty name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelFacultyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.labelFacultyName.Location = new System.Drawing.Point(250, 56);
+            this.labelFacultyName.Name = "labelFacultyName";
+            this.labelFacultyName.Size = new System.Drawing.Size(289, 37);
+            this.labelFacultyName.TabIndex = 1;
+            this.labelFacultyName.Text = "My faculty name";
+            this.labelFacultyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.buttonSave);
             this.groupBox1.Controls.Add(this.buttonAddCourse);
             this.groupBox1.Controls.Add(this.textBoxGrade);
             this.groupBox1.Controls.Add(this.textBoxCourseCredit);
@@ -173,36 +183,92 @@ namespace MyTranscript_Week11_029
             this.buttonAddCourse.UseVisualStyleBackColor = true;
             this.buttonAddCourse.Click += new System.EventHandler(this.AddGrade);
             // 
-            // dataGridViewCourse
+            // dataGridViewY1S1
             // 
-            this.dataGridViewCourse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCourse.Location = new System.Drawing.Point(12, 96);
-            this.dataGridViewCourse.Name = "dataGridViewCourse";
-            this.dataGridViewCourse.Size = new System.Drawing.Size(776, 230);
-            this.dataGridViewCourse.TabIndex = 3;
+            this.dataGridViewY1S1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewY1S1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewY1S1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewY1S1.Name = "dataGridViewY1S1";
+            this.dataGridViewY1S1.Size = new System.Drawing.Size(762, 227);
+            this.dataGridViewY1S1.TabIndex = 3;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageYear1Sem1);
+            this.tabControl1.Controls.Add(this.tabPageYear1Sem2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 97);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(776, 259);
+            this.tabControl1.TabIndex = 4;
+            // 
+            // tabPageYear1Sem1
+            // 
+            this.tabPageYear1Sem1.Controls.Add(this.dataGridViewY1S1);
+            this.tabPageYear1Sem1.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYear1Sem1.Name = "tabPageYear1Sem1";
+            this.tabPageYear1Sem1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYear1Sem1.Size = new System.Drawing.Size(768, 233);
+            this.tabPageYear1Sem1.TabIndex = 0;
+            this.tabPageYear1Sem1.Text = "Year1 Sem1";
+            this.tabPageYear1Sem1.UseVisualStyleBackColor = true;
+            // 
+            // tabPageYear1Sem2
+            // 
+            this.tabPageYear1Sem2.Controls.Add(this.dataGridViewY1S2);
+            this.tabPageYear1Sem2.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYear1Sem2.Name = "tabPageYear1Sem2";
+            this.tabPageYear1Sem2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYear1Sem2.Size = new System.Drawing.Size(768, 233);
+            this.tabPageYear1Sem2.TabIndex = 1;
+            this.tabPageYear1Sem2.Text = "Year1 Sem2";
+            this.tabPageYear1Sem2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewY1S2
+            // 
+            this.dataGridViewY1S2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewY1S2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewY1S2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewY1S2.Name = "dataGridViewY1S2";
+            this.dataGridViewY1S2.Size = new System.Drawing.Size(762, 227);
+            this.dataGridViewY1S2.TabIndex = 0;
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(327, 100);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(55, 23);
+            this.buttonSave.TabIndex = 9;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.SaveFile);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 493);
-            this.Controls.Add(this.dataGridViewCourse);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelFacultyName);
+            this.Controls.Add(this.labelUniversityName);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCourse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewY1S1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPageYear1Sem1.ResumeLayout(false);
+            this.tabPageYear1Sem2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewY1S2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUniversityName;
+        private System.Windows.Forms.Label labelFacultyName;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxCourseName;
         private System.Windows.Forms.TextBox textBoxCourseID;
@@ -213,7 +279,12 @@ namespace MyTranscript_Week11_029
         private System.Windows.Forms.TextBox textBoxCourseCredit;
         private System.Windows.Forms.TextBox textBoxGrade;
         private System.Windows.Forms.Button buttonAddCourse;
-        private System.Windows.Forms.DataGridView dataGridViewCourse;
+        private System.Windows.Forms.DataGridView dataGridViewY1S1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPageYear1Sem1;
+        private System.Windows.Forms.TabPage tabPageYear1Sem2;
+        private System.Windows.Forms.DataGridView dataGridViewY1S2;
+        private System.Windows.Forms.Button buttonSave;
     }
 }
 

@@ -17,6 +17,14 @@ namespace MyTranscript_Week11_029
             InitializeComponent();
         }
 
+        class Course
+        {
+            public string CourseID { get; set; }
+            public string CourseName { get; set; }
+            public string CourseCredit { get; set; }
+            public string Grade { get; set; }
+        }
+
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -35,6 +43,15 @@ namespace MyTranscript_Week11_029
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddGrade(object sender, EventArgs e)
+        {
+            Course newCourse = new Course();
+            newCourse.CourseID = textBoxCourseID.Text;
+            newCourse.CourseName = textBoxCourseName.Text;
+            newCourse.CourseCredit = textBoxCourseID.Text;
+            newCourse.Grade = textBoxGrade.Text;
         }
     }
 }

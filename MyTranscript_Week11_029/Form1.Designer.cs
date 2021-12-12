@@ -171,6 +171,7 @@ namespace MyTranscript_Week11_029
             this.buttonAddCourse.TabIndex = 8;
             this.buttonAddCourse.Text = "Add";
             this.buttonAddCourse.UseVisualStyleBackColor = true;
+            this.buttonAddCourse.Click += new System.EventHandler(this.AddGrade);
             // 
             // dataGridViewCourse
             // 
